@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "JLZCheckmarkGestureRecognizer.h"
+#import "JLZXGestureRecognizer.h"
 
 @interface ViewController ()
 
@@ -20,11 +21,19 @@
     
     JLZCheckmarkGestureRecognizer *checkmarkRecognizer = [[JLZCheckmarkGestureRecognizer alloc] initWithTarget:self action:@selector(handleCheckMark:)];
     [self.view addGestureRecognizer:checkmarkRecognizer];
+    
+    JLZXGestureRecognizer *xRecognizer = [[JLZXGestureRecognizer alloc] initWithTarget:self action:@selector(handleX:)];
+    [self.view addGestureRecognizer:xRecognizer];
 }
 
 - (void)handleCheckMark:(JLZCheckmarkGestureRecognizer *)recognizer
 {
     NSLog(@"Checkmark Gesture Recognized!");
+}
+
+- (void)handleX:(JLZXGestureRecognizer *)recognizer
+{
+    NSLog(@"X Gesture Recognized!");
 }
 
 @end

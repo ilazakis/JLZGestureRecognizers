@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2858EE61A6F3BF0003D1BE4 /* JLZXGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2858EE51A6F3BF0003D1BE4 /* JLZXGestureRecognizer.m */; };
 		D2E4C2061A6D999A007D06F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C2051A6D999A007D06F7 /* main.m */; };
 		D2E4C2091A6D999A007D06F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C2081A6D999A007D06F7 /* AppDelegate.m */; };
 		D2E4C20C1A6D999A007D06F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C20B1A6D999A007D06F7 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2858EE41A6F3BF0003D1BE4 /* JLZXGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLZXGestureRecognizer.h; sourceTree = "<group>"; };
+		D2858EE51A6F3BF0003D1BE4 /* JLZXGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLZXGestureRecognizer.m; sourceTree = "<group>"; };
 		D2E4C2001A6D999A007D06F7 /* JLZGestureRecognizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLZGestureRecognizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E4C2041A6D999A007D06F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E4C2051A6D999A007D06F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,8 +87,10 @@
 		D2E4C2021A6D999A007D06F7 /* JLZGestureRecognizers */ = {
 			isa = PBXGroup;
 			children = (
-				D2E4C2291A6D99BB007D06F7 /* JLZCheckmarkGestureRecognizer.m */,
 				D2E4C22A1A6D99BB007D06F7 /* JLZCheckmarkGestureRecognizer.h */,
+				D2E4C2291A6D99BB007D06F7 /* JLZCheckmarkGestureRecognizer.m */,
+				D2858EE41A6F3BF0003D1BE4 /* JLZXGestureRecognizer.h */,
+				D2858EE51A6F3BF0003D1BE4 /* JLZXGestureRecognizer.m */,
 				D2E4C2071A6D999A007D06F7 /* AppDelegate.h */,
 				D2E4C2081A6D999A007D06F7 /* AppDelegate.m */,
 				D2E4C20A1A6D999A007D06F7 /* ViewController.h */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2E4C20C1A6D999A007D06F7 /* ViewController.m in Sources */,
+				D2858EE61A6F3BF0003D1BE4 /* JLZXGestureRecognizer.m in Sources */,
 				D2E4C2091A6D999A007D06F7 /* AppDelegate.m in Sources */,
 				D2E4C22B1A6D99BB007D06F7 /* JLZCheckmarkGestureRecognizer.m in Sources */,
 				D2E4C2061A6D999A007D06F7 /* main.m in Sources */,
@@ -352,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JLZGestureRecognizers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -362,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JLZGestureRecognizers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -420,6 +428,7 @@
 				D2E4C2251A6D999B007D06F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2E4C2261A6D999B007D06F7 /* Build configuration list for PBXNativeTarget "JLZGestureRecognizersTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +437,7 @@
 				D2E4C2281A6D999B007D06F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
