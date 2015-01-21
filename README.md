@@ -4,7 +4,7 @@ A collection of custom UIGestureRecognizer subclasses. More will be added with t
 1) **JLZCheckmarkGestureRecognizer** recognizes checkmark-like gestures. 
 
 2) **JLZXGestureRecognizer** recognizes 'X' gestures (when both strokes move downwards).
-Use the designated initializer
+Use the designated initializer to set a specific timeout between the two 'X' stroke movements/touches. Default value is 0.4.
     - (instancetype)initWithTarget:(id)target action:(SEL)action timeoutBetweenTouches:(NSTimeInterval)timeout;
 
 Example uses:
@@ -15,7 +15,7 @@ Example uses:
 	    JLZCheckmarkGestureRecognizer *checkmarkRecognizer = [[JLZCheckmarkGestureRecognizer alloc] initWithTarget:self action:@selector(handleCheckMark:)];
 	    [self.view addGestureRecognizer:checkmarkRecognizer];
 	    
-	    JLZXGestureRecognizer *xRecognizer = [[JLZXGestureRecognizer alloc] initWithTarget:self action:@selector(handleX:)];
+	    JLZXGestureRecognizer *xRecognizer = [[JLZXGestureRecognizer alloc] initWithTarget:self action:@selector(handleX:) timeoutBetweenTouches:(0.2)];
 	    [self.view addGestureRecognizer:xRecognizer];
 	}
 
@@ -30,4 +30,5 @@ Example uses:
 	}
 
 **TODO**
+
 1. Recognize strokes moving upwards for 'X' gesture.
