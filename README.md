@@ -5,7 +5,8 @@ A collection of custom UIGestureRecognizer subclasses. More will be added with t
 
 2) **JLZXGestureRecognizer** recognizes 'X' gestures (when both strokes move downwards).
 Use the designated initializer to set a specific timeout between the two 'X' stroke movements/touches. Default value is 0.4.
-    - (instancetype)initWithTarget:(id)target action:(SEL)action timeoutBetweenTouches:(NSTimeInterval)timeout;
+
+	- (instancetype)initWithTarget:(id)target action:(SEL)action timeoutBetweenTouches:(NSTimeInterval)timeout;
 
 Example uses:
 
