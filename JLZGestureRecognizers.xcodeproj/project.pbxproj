@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D2858EE61A6F3BF0003D1BE4 /* JLZXGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2858EE51A6F3BF0003D1BE4 /* JLZXGestureRecognizer.m */; };
+		D2A4C7651A8F1B23003059E9 /* JLZTouchTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A4C7641A8F1B23003059E9 /* JLZTouchTracker.m */; };
 		D2E4C2061A6D999A007D06F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C2051A6D999A007D06F7 /* main.m */; };
 		D2E4C2091A6D999A007D06F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C2081A6D999A007D06F7 /* AppDelegate.m */; };
 		D2E4C20C1A6D999A007D06F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C20B1A6D999A007D06F7 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		D2858EE41A6F3BF0003D1BE4 /* JLZXGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLZXGestureRecognizer.h; sourceTree = "<group>"; };
 		D2858EE51A6F3BF0003D1BE4 /* JLZXGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLZXGestureRecognizer.m; sourceTree = "<group>"; };
+		D2A4C7631A8F1B23003059E9 /* JLZTouchTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLZTouchTracker.h; sourceTree = "<group>"; };
+		D2A4C7641A8F1B23003059E9 /* JLZTouchTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLZTouchTracker.m; sourceTree = "<group>"; };
 		D2E4C2001A6D999A007D06F7 /* JLZGestureRecognizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLZGestureRecognizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E4C2041A6D999A007D06F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E4C2051A6D999A007D06F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				D2E4C2101A6D999A007D06F7 /* Images.xcassets */,
 				D2E4C2121A6D999B007D06F7 /* LaunchScreen.xib */,
 				D2E4C2031A6D999A007D06F7 /* Supporting Files */,
+				D2A4C7631A8F1B23003059E9 /* JLZTouchTracker.h */,
+				D2A4C7641A8F1B23003059E9 /* JLZTouchTracker.m */,
 			);
 			path = JLZGestureRecognizers;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2E4C20C1A6D999A007D06F7 /* ViewController.m in Sources */,
+				D2A4C7651A8F1B23003059E9 /* JLZTouchTracker.m in Sources */,
 				D2858EE61A6F3BF0003D1BE4 /* JLZXGestureRecognizer.m in Sources */,
 				D2E4C2091A6D999A007D06F7 /* AppDelegate.m in Sources */,
 				D2E4C22B1A6D99BB007D06F7 /* JLZCheckmarkGestureRecognizer.m in Sources */,

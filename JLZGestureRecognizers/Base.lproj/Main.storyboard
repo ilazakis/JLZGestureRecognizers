@@ -1,25 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="JLZTouchTracker">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="x23-5X-DLc">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="seS-am-F5h" userLabel="x">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="x23-5X-DLc" secondAttribute="centerX" id="1KB-2B-WXP"/>
+                            <constraint firstItem="x23-5X-DLc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="R5w-An-3qq"/>
+                            <constraint firstItem="x23-5X-DLc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="ZNI-87-xZu"/>
+                            <constraint firstAttribute="centerY" secondItem="seS-am-F5h" secondAttribute="centerY" id="erq-cl-ugf"/>
+                            <constraint firstAttribute="centerX" secondItem="seS-am-F5h" secondAttribute="centerX" id="nXa-sV-qbA"/>
+                            <constraint firstItem="seS-am-F5h" firstAttribute="width" secondItem="x23-5X-DLc" secondAttribute="width" id="uOs-Ju-rHc"/>
+                            <constraint firstAttribute="centerY" secondItem="x23-5X-DLc" secondAttribute="centerY" id="wuy-Qo-tdH"/>
+                            <constraint firstItem="seS-am-F5h" firstAttribute="height" secondItem="x23-5X-DLc" secondAttribute="height" id="zPR-ju-xuk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="checkMarkImageView" destination="x23-5X-DLc" id="ibR-Eb-DQV"/>
+                        <outlet property="xImageView" destination="seS-am-F5h" id="gQM-FR-DQH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkmark" width="600" height="700"/>
+        <image name="x" width="600" height="700"/>
+    </resources>
 </document>
