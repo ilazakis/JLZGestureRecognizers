@@ -30,6 +30,8 @@ Example uses:
 	    NSLog(@"X Gesture Recognized!");
 	}
 
+![demo](JLZGestureRecognizer.gif)
+
 **TODO**
 
 1. Recognize strokes moving upwards for 'X' gesture.
